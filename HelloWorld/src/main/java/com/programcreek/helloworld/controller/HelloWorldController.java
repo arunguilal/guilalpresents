@@ -22,4 +22,9 @@ public class HelloWorldController {
 		return mv;
 	}
 
+		public static String showMessage1(String name) {
+
+		return name;
+	}
+
 }
