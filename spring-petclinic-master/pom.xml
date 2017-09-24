@@ -2,8 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <maven.build.timestamp.format>MM.yyyy</maven.build.timestamp.format>
-  <yearMonth>${maven.build.timestamp}</yearMonth>   
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
@@ -41,6 +40,9 @@
 
   </properties>
 
+<!--  This format is used by SonarQube. If you need another format see "buildnumber-maven-plugin" -->
+<maven.build.timestamp.format>MM.yyyy</maven.build.timestamp.format>
+<yearMonth>${maven.build.timestamp}</yearMonth>
     <!-- ************************-->
     <!-- Sonar/Reporting settings -->
     <!-- ************************-->
